@@ -1,0 +1,18 @@
+version: "3.9"
+
+services: 
+  ui:
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    ports: 
+      - "3000:3000"
+    volumes:
+      - ./ui/:/usr/src/app/ui
+  api:
+    build: ./api
+    ports: 
+      - "5000:5000"
+    volumes:
+      - ./api/:/usr/src/app/api
+      
