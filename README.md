@@ -202,3 +202,7 @@ Entregou incompleto, teve dificuldade com algo, ou fez algo meio esquisito para 
 
 ## Docker compose 
 Devido a versão utilizada de Docker, para rodá-lo na minha máquina foi utilizado o comando `docker compose up`.
+
+## Imagens da aplicação 
+![image](https://user-images.githubusercontent.com/26654724/181247868-645df738-f81f-406a-8555-5a8ca7c60659.png)
+
