@@ -4,15 +4,17 @@ services:
   ui:
     build:
       context: ./ui
-      dockerfile: Dockerfile
     ports: 
       - "3000:3000"
-    volumes:
-      - ./ui/:/usr/src/app/ui
+    container_name: ui
+    stdin_open: true
   api:
-    build: ./api
+    build: 
+      context: ./api
+    container_name: api
     ports: 
       - "5000:5000"
     volumes:
       - ./api/:/usr/src/app/api
+      - /usr/src/app/api/node_modules
       
